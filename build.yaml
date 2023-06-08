@@ -1,0 +1,8 @@
+builders:
+  route_generator:
+    import: "package:fy_snippet_generator/builder.dart"
+    builder_factories: ["fySnipperBuilder"]
+    build_extensions: { r'$lib$': ["fy_gen/sample.fsg.dart"] }
+    auto_apply: dependents
+    build_to: source
+    applies_builders: ["source_gen|combining_builder"]

@@ -1,0 +1,3 @@
+class GenerateSampleCode {
+  const GenerateSampleCode();
+}
